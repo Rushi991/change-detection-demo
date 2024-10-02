@@ -1,0 +1,9 @@
+<h2>Parent Component</h2>
+<p>Primitive Data: {{ primitiveData }}</p>
+<p>Non-Primitive Data: {{ nonPrimitiveData.name }}</p>
+
+<button (click)="updatePrimitive()">Update Primitive</button>
+<button (click)="updateNonPrimitive()">Update Non-Primitive</button>
+<button (click)="incrementServiceCounter()">Increment Parent Service Counter</button>
+
+<app-child [parentData]="nonPrimitiveData"></app-child> <!-- Pass non-primitive data to child -->
